@@ -1,4 +1,4 @@
-# AI-Product-Service-Prototype-Development_DNA_classification app By Shreya Prasad
+# AI-Product-Service-Prototype-Development_DNA_classification app 
 This repository contains Python code for classifying DNA sequences to identify E. coli bacteria.
 
 **Project Structure**
