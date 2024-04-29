@@ -1,5 +1,5 @@
 # AI-Product-Service-Prototype-Development_DNA_classification app 
-This repository contains Python code for classifying DNA sequences to identify E. coli bacteria.
+This repository contains project for classifying DNA sequences to identify E. coli bacteria.
 
 **Project Structure**
 
