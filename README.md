@@ -46,3 +46,5 @@ data_test = encoder.transform(df_test).toarray()
 
 # Predict the class
 prediction = model.predict(data_test)[0]
+
+![image](https://github.com/Shreyaprasad21/Feynn-AI-Product-Service-Prototype-Development-DNA-classification-app/assets/142075353/bf7631ba-0189-49af-8422-9268be6720e0)
