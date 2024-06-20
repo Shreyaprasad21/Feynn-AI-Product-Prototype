@@ -2,7 +2,7 @@
 
 This repository contains project for classifying DNA sequences to identify E. coli bacteria.
 
-**Project Structure**
+**Project Structure**        
 
 * **data.py** (not included): Script to download and pre-process the DNA sequence data.
 * **model.py** (content displayed above): Script for training and evaluating a machine learning model for E. coli classification.
