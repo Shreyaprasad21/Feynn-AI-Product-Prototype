@@ -10,7 +10,7 @@ This repository contains project for classifying DNA sequences to identify E. co
 
 **Requirements**
 
-* Python 3.x
+* Python 3.x              
 * numpy
 * matplotlib.pyplot
 * pandas
