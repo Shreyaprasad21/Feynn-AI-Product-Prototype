@@ -23,7 +23,7 @@ This repository contains project for classifying DNA sequences to identify E. co
 * scikit-learn
 * pickle
 
-**Usage**
+**Usage**                                      
 
 1. Install the required libraries.
 2. Run `model.py` to train and evaluate the model. 
