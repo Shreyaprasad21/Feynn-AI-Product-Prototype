@@ -2,7 +2,7 @@
 
 
 ![image-1](https://github.com/Shreyaprasad21/Feynn-AI-Product-Service-Prototype-Development-DNA-classification-app/assets/142075353/56dae95e-6464-411b-b522-47f957fc8045)
-
+          
                                                                                                                                          
 This repository contains project for classifying DNA sequences to identify E. coli bacteria.
                                                                                                                                       
