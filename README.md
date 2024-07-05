@@ -1,55 +1,68 @@
-# AI-Product-Service-Prototype-Development_DNA_classification app 
+# Feynn-AI-Product-Prototype
 
+This repository contains a DNA classification app for detecting E. Coli, developed during the Feynn AI Product Prototype Developement project.
 
-![image-1](https://github.com/Shreyaprasad21/Feynn-AI-Product-Service-Prototype-Development-DNA-classification-app/assets/142075353/56dae95e-6464-411b-b522-47f957fc8045)
-                                  
-                                                                                                                                         
-This repository contains project for classifying DNA sequences to identify E. coli bacteria.                              
-                                                                                                                                      
-**Project Structure**        
-                 
-* **data.py** (not included): Script to download and pre-process the DNA sequence data.
-* **model.py** (content displayed above): Script for training and evaluating a machine learning model for E. coli classification.
-* **EColi-encoder.pickle**: Saved OneHotEncoder object for encoding DNA sequences.
-* **E-Coli_model.pickle**: Saved machine learning model for E. coli classification.
+## Project Overview
 
-**Requirements**
+### Description
+The project includes a web-based application that performs DNA sequencing to detect E. Coli. The application leverages machine learning techniques to classify DNA sequences accurately.
 
-* Python 3.x              
-* numpy
-* matplotlib.pyplot
-* pandas
-* seaborn
-* scikit-learn
-* pickle
+### Features
+- DNA sequencing and classification for E. Coli detection.
+- Web-based interface for user interaction.
+- Efficient data processing and classification.
 
-**Usage**                                      
+## Repository Structure
 
-1. Install the required libraries.
-2. Run `model.py` to train and evaluate the model. 
-3. The saved model (`E-Coli_model.pickle`) and encoder (`EColi-encoder.pickle`) can be used to classify new DNA sequences.
+- `mysite/`: Contains the Django project files.
+  - `manage.py`: Script to run the Django server and manage the application.
+- `DNA sequencing for detecting E.Coli.ipynb`: Jupyter notebook with the DNA sequencing and classification code.
+- `image-1.png`: Additional image resource.
+- `image.png`: Additional image resource.
 
-**Example**
+## Installation and Setup
 
-```python
-from sklearn.preprocessing import OneHotEncoder
-from sklearn.neural_network import MLPClassifier
-import pickle
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/Feynn-AI-Product-Prototype.git
+    ```
 
-# Load the encoder and model
-encoder = pickle.load(open("EColi-encoder.pickle", "rb"))
-model = pickle.load(open("E-Coli_model.pickle", "rb"))
+2. Navigate to the project directory:
+    ```bash
+    cd Feynn-AI-Product-Prototype/mysite
+    ```
 
-# Define a new DNA sequence
-genome = "ttactagcaatacgcttgcgttcggtggttaagtatgtataatgcgcgggcttgtcg"
-genome_list = list(genome)
+3. Install the required dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-# Encode the sequence
-df_test = pd.DataFrame(genome_list)
-df_test = df_test.transpose()
-data_test = encoder.transform(df_test).toarray()
+## Running the Application
 
-# Predict the class
-prediction = model.predict(data_test)[0]
+1. Navigate to the `mysite` directory:
+    ```bash
+    cd mysite
+    ```
 
-![image](https://github.com/Shreyaprasad21/Feynn-AI-Product-Service-Prototype-Development-DNA-classification-app/assets/142075353/bf7631ba-0189-49af-8422-9268be6720e0)
+2. Run the Django development server:
+    ```bash
+    python manage.py runserver
+    ```
+
+3. Open a web browser and navigate to `http://127.0.0.1:8000/home` to access the application.
+
+## Files
+
+- `mysite/`: Directory containing the Django project files.
+  - `manage.py`: Main script to run the Django server.
+- `DNA sequencing for detecting E.Coli.ipynb`: Jupyter notebook with the DNA sequencing and classification logic.
+- `image-1.png`: Additional image file.
+- `image.png`: Additional image file.
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.
+
+## License
+
+This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
