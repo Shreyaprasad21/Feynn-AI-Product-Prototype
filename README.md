@@ -32,10 +32,7 @@ The project includes a web-based application that performs DNA sequencing to det
     cd Feynn-AI-Product-Prototype/mysite
     ```
 
-3. Install the required dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
+3. Install the required dependencies
 
 ## Running the Application
 
